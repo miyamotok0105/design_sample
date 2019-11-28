@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="reset.css" rel="stylesheet" type="text/css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="layouts-common.css">
+    <!-- <link href="style3.css" rel="stylesheet" type="text/css"> -->
+    <style>
+
+      .container {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+      }
+      
+      /* 横に伸ばす */
+      .c1, .c2, .c3, .c4 {
+        width: 100%;
+      }
+
+      /* 1000px以上の場合。 */
+      @media (min-width: 1000px) {
+        .c1 {
+          width: 15%;
+        }
+        .c4 {
+          width: 85%;
+        }
+      }
+
+        /* 600px以上の場合。 */
+/*      @media (min-width: 600px) {
+        .c1 {
+          width: 25%;
+        }
+        .c4 {
+          width: 75%;
+        }
+      }*/
+
+      /* 800px以上の場合は800pxに固定。 */
+      /*@media (min-width: 800px) {
+        .container {
+          width: 800px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }*/
+      /* // [END lshifter] */
+
+
+    </style>
+    <title>Responsive Web Design Pattern: Layout Shifter</title>
+  </head>
+  <body>
+
+
+
+    <main>
+      <div>デザインパターン：Shifter</div>
+      <div class="container" role="main">
+        <div class="c1">c1</div>
+        <div class="c4">c4
+          <div class="c2">c2</div>
+          <div class="c3">c3</div>
+        </div>
+      </div>
+    </main>
+
+
+    <script>
+      
+    </script>
+    <script type="text/javascript">
+      // function init() {
+      //   window.matchMedia("(min-width: 800px)").addListener(hitMQ);
+      //   window.matchMedia("(min-width: 600px)").addListener(hitMQ);
+      // }
+
+      // function hitMQ(evt) {
+      //   sampleCompleted("RWDPatterns-LayoutShifter");
+      // }
+
+      // init();
+
+    </script>
+  </body>
+</html>
+
